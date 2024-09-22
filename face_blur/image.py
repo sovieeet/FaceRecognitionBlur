@@ -16,7 +16,7 @@ setup_device()
 detector = MTCNN_setup()
 
 # Image path
-image_path = "face_blur/images/kanye-taylor.jpg"  # You can change the path to any image you want to process
+image_path = "face_blur/images-for-testing/kanye-taylor.jpg"  # You can change the path to any image you want to process
 
 image = cv2.imread(image_path)
 
