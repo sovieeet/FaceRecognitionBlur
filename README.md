@@ -6,7 +6,7 @@ This repositor it's a personal face recognition and blur project. This project u
 
 1. **Clone the Repository**:
      ```sh
-     git clone https://github.com/sovieeet/face_recognition.git
+     git clone https://github.com/sovieeet/FaceRecognitionBlur.git
      cd face_recognition
      ```
 
