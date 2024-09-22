@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+
 def apply_blur_and_mask(output, mask):
     """
     This function applies a blur filter to the image and combines it with a mask.
@@ -29,6 +30,8 @@ def apply_blur_and_mask(output, mask):
     mask_3_channels = cv2.merge([mask_normalized, mask_normalized, mask_normalized])
 
     # Combine the blur image and the original using the smoothed mask
-    output = (blurred_image * mask_3_channels + output * (1 - mask_3_channels)).astype(np.uint8)
-    
+    output = (blurred_image * mask_3_channels + output * (1 - mask_3_channels)).astype(
+        np.uint8
+    )
+
     return output
