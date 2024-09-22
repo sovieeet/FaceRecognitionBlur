@@ -13,7 +13,7 @@ setup_device()
 # Call MTCNN function to create the detector
 detector = MTCNN_setup()
 
-# Abrir la webcam (índice 0)
+# Open webcam using index 0
 cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
