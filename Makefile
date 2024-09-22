@@ -6,6 +6,22 @@ install:
 conda:
 	conda create --name tf python=3.9
 
+.PHONY: venv-win
+venv-win:
+	python -m venv .venv
+
+.PHONY: venv-win-act
+venv-win-activate:
+	source .venv/Scripts/activate
+
+.PHONY: venv-unix
+venv-unix:
+	python3 -m venv .venv
+
+.PHONY: venv-unix-act
+venv-unix-act:
+	source .venv/bin/activate
+
 .PHONY: conda-install # To install cuda and cudnn packages required for tensorflow use in windows ONLY IF YOU WANT TO USE YOUR GPU
 conda-install:
 	conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
