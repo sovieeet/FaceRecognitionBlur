@@ -39,7 +39,6 @@ def create_face_mask(faces, image, mask):
     return mask
 
 # Main function to process the image
-# Main function to process the image
 def process_face_image(image, detector):
     # Get the image dimensions
     (h, w) = image.shape[:2]
@@ -55,7 +54,7 @@ def process_face_image(image, detector):
     if faces:  # Only proceed if faces are detected
         mask = create_face_mask(faces, image, mask)
 
-        # cv2.imshow('Mask', mask) #Uncomment this line to show the mask in the image
+        # cv2.imshow('Mask', mask) # Uncomment this line to show the mask in the image
         # cv2.waitKey(0)
 
         # Apply blur and mask using the imported function
